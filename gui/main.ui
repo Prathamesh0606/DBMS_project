@@ -81,7 +81,7 @@
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/mongodb-logo (2).png</pixmap>
+      <pixmap>icons/mongodb-logo (2).png</pixmap>
      </property>
     </widget>
    </widget>
