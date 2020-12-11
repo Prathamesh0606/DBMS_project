@@ -6,10 +6,10 @@ from bson import ObjectId
 connection = pymongo.MongoClient('localhost', 27017)
 
 
-#create database
+# create database
 database = connection['mydb']
 
-#create collection
+# create collection
 collection = database['employees_info']
 
 print("Database connected")
@@ -36,7 +36,7 @@ def update_or_create(document_id, data):
 
 def get_single_data(document_id):
     """
-    this will get the document data by documnet_id
+    this will get the document data by document_id
     :param document_id:
     :return:
     """
@@ -72,10 +72,10 @@ def remove_data(doc_id):
     :return:
     """
 
-    document = collection.delete_one({'_id':ObjectId(doc_id)})
+    document = collection.delete_one({'_id': ObjectId(doc_id)})
     return document.acknowledged
 
 
-#close database
+# close database
 
 connection.close()
